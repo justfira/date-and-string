@@ -87,7 +87,7 @@ public class ProgramPenjual {
                     }
                     int jumlahBeli = Integer.parseInt(jumlahBeliField.getText());
         
-                    String namaKasir = namaKasirField.getText();
+                    String namaKasir = namaKasirField.getText().trims();
         
                     // Membuat objek struk
                     Struk struk = new Struk(noFaktur, kodeBarang, namaBarang, hargaBarang, jumlahBeli, namaKasir);
